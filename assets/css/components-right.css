@@ -1,0 +1,82 @@
+.st-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	visibility: hidden;
+	width: 300px;
+	height: 100%;
+	background: #48a770;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.st-menu::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.st-menu-open .st-menu::after {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* Effect 11: Scale and rotate pusher */
+
+.st-effect-11.st-container {
+	-webkit-perspective: 1500px;
+	perspective: 1500px;
+	
+}
+
+.st-effect-4.st-menu-open.st-container,
+.st-effect-11.st-menu-open.st-container{
+	background:#7f7f7f;
+	height: 100%;
+}
+
+.height-block{
+	height: 100%;
+}
+
+.st-effect-11 .st-pusher {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.st-effect-11.st-menu-open .st-pusher {
+	-webkit-transform: translate3d(10px, 0px, -123px) rotateY(20deg);
+	transform: translate3d(10px, 0px, -123px) rotateY(20deg);
+}
+
+.st-effect-11.st-menu {
+	opacity: 1;
+	-webkit-transform: translate3d(100%, 0, 0);
+	transform: translate3d(100%, 0, 0);
+}
+
+.st-effect-11.st-menu-open .st-effect-11.st-menu {
+	visibility: visible;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.st-effect-11.st-menu::after {
+	display: none;
+}
+
+/* Effect 12: Open door */
+

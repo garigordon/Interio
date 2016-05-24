@@ -1,0 +1,139 @@
+/*!==========================================================================
+   General
+   ========================================================================== */
+
+html{
+	font-size:100%;
+}
+
+body{
+	background:#fff;
+	font-size:100%;
+}
+
+body,html{
+	height:100%;
+}
+
+.st-content, .st-content-inner {
+    height: 100%;
+}
+
+@mixin font-reg {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin montserrat-font-bold {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+}
+
+@mixin montserrat-font-light {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 300;
+}
+
+@mixin montserrat-font-reg {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+}
+
+.no-padding,
+.pading-none{
+	padding:0 !important;
+}
+
+.main{
+	background: #eceeeb;
+    padding: 53px 0 91px;
+    position: relative;
+    z-index: 0;
+}
+
+.page{
+	overflow:hidden;
+	min-height:100%;
+	margin:0 2%;
+}
+.height-block .page {
+	margin:0;
+}
+
+.fa-pinterest-p:before {
+  content: "\f231";
+}
+
+.z_index-head{
+	z-index:21;
+}
+
+a{transition: all 0.2s; outline: none;}
+a:focus, button:focus, input:focus{outline: none;}
+a:focus, a:active{text-decoration: none; color: $brand-primary;}
+
+h1,h2,h3,h4,h5,h6{a{color: $gray-dark; &:hover{color: $brand-primary; text-decoration: none;}}}
+
+h1,h2,h3,h4,h5,h6{text-transform: uppercase; color: $gray-dark; &:first-child{margin-top: 0;}}
+h1,h2{line-height: 36px; margin: 20px 0 10px;}
+h3,h4{line-height: 30px; margin: 20px 0 10px;}
+h5,h6{line-height: 26px; margin: 20px 0 10px;}
+p{color: $gray-light;}
+
+img{max-width: 100%;}
+
+@media (max-width: 1000px){
+	.container{
+		width:100%;
+	}
+	.main{
+		padding:33px 0 60px;
+	}
+	.st-effect-4.st-menu-open .page{
+		position:relative;
+		z-index:222;
+	}
+}
+
+.st-effect-4.st-menu-open .z_index{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:22;
+	cursor:pointer;
+}
+
+@media (max-width: 800px){
+.container{
+	width:100% !important;
+}
+.st-container {
+    position: relative;
+    overflow: hidden;
+    width: calc(100%) !important;
+}
+}
+.visible-xs{display:none;}
+.hidden-xs{
+	display:block;
+}
+@media (max-width:768px){
+.visible-xs{
+	display:block !important;
+}  
+.hidden-xs{
+	display:none !important;
+}
+}
+
+@media (min-width: 1200px)  and (max-width:1280px){
+    .container {
+      width: 100%; 
+    } 
+}

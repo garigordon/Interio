@@ -1,0 +1,60 @@
+/*!
+
+Theme Name: Interio
+Theme URI: http://interio.azelab.com
+Description: Interio 
+Version: 1.0.0
+Author: Azelab
+Author URI: azelab.com
+License: Regular
+License URI: http://themeforest.net/licenses/standard
+Table of Contents:
+
+I. Interio components
+      1. General
+      2. Layout
+         a. Body & Wrapper
+         b. Header
+         c. Footer
+         d. Sections
+         e. Containers
+      3. Menu Bar
+         a. Menu Bar
+         b. Menu Bar Menu
+      4. Shop
+      5. Blog
+*/
+
+
+@charset "UTF-8";
+
+
+/*!==========================================================================
+   Theme Framework
+   ========================================================================== */
+
+@import "bootstrap";
+@import "settings.scss";
+
+/*!==========================================================================
+   Vendor components
+   ========================================================================== */
+
+//@import "vendor/font-awesome";
+//@import "vendor/eleganticons";
+@import "vendor/animate";
+@import "vendor/perfect-scrollbar";
+//@import "vendor/mtmenu";
+//@import "vendor/validationEngine";
+
+
+/*!==========================================================================
+   Interio components
+   ========================================================================== */
+
+@import "general";
+@import "layout";
+@import "menu-bar";
+@import "shop";
+@import "blog";
+@import "sidebar-cart";
